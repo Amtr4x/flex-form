@@ -1,0 +1,62 @@
+@font-face {
+  src: url(./assets/Norse-Bold.otf);
+  font-family: "Norse-Bold";
+}
+
+:root {
+  color-scheme: Light Dark;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  display: flex;
+  height: 100vh;
+}
+
+.aside {
+  background-image: url(./assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aside__odin-tag {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 200px;
+  padding: 10px;
+  margin-top: 20vh;
+}
+
+.aside__odin-tag_text {
+  color: #ffffff;
+  font-size: clamp(36px, 48px, 54px);
+  font-family: 'Norse-Bold';
+}
+
+.aside__copyright-image,
+.aside__odin-tag {
+  background-color: #00000068;
+  backdrop-filter: blur(2px);
+}
+
+.aside__copyright-image {
+  text-wrap: pretty;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  font-weight: 600;
+  margin-bottom: 0;
+  a {
+    color: rgb(8, 249, 201);
+    text-decoration: none;
+  }
+}
+
+.aside__odin-tag_logo {
+  height: 170px;
+  width: auto;
+}
